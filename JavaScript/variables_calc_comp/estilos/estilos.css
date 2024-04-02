@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+
+}
+
+.grids{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 70px;
+}
+
+.grids div{
+    display: grid;
+    box-shadow: 0 0 5px rgb(100, 100, 100);
+    border-radius: 25px;
+    height: 128px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}

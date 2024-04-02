@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 5</title>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+
+<body>
+    <a href="./index.html">VOLVER ATRAS</a>
+    <h1>Sergi</h1>
+
+    <!--  
+        EJERCICIO 5 (1 punto)
+        Crea un programa que solicite al usuario un número y calcule su factorial.
+        Por ejemplo: el factorial de 5 sería 5 x 4 x 3 x 2 x 1 = 120
+     -->
+
+
+    <script>
+
+        let numero = prompt("introduce un número");
+        let resultado = 1;
+
+        for (let i = 1; i <= numero; i++) {
+            resultado *= i;
+        }
+
+        console.log("El factorial de " +numero + " es " +resultado);
+
+    </script>
+
+
+</body>
+
+</html>

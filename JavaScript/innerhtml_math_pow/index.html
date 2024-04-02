@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Crear Tabla y hacer la potencia</h1>
+    <div>
+        <table id="tabla1" style="border: 4px solid red;text-align:center; 
+        vertical-align:middle;min-width: 300px;margin:auto;">
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        // Pide introducir el número sobre el que generar la tabla
+
+        var input1 = parseInt(prompt("Introduce el primer numero"));
+        var input2 = parseInt(prompt("Introduce la potencia"));
+        // Introduce encabezados de la tabla
+        var resultado = "<tr><th>Potencia</th><th>Resultado</th></tr>";
+        //calculo potencia
+        resultado += `<tr><td>${input1} ^ ${input2}</td><td>${Math.pow(input1,input2)}</td></tr>`
+
+        // Muestra el resultado por pantalla
+        document.getElementById('tabla1').innerHTML = resultado;
+    </script>
+</body>
+
+</html>

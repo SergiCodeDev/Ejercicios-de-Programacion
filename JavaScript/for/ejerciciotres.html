@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 3</title>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+
+<body>
+    <a href="./index.html">VOLVER ATRAS</a>
+    <h1>Sergi</h1>
+
+    <!--  
+        EJERCICIO 3 (1 punto)
+        Crea un programa que haga lo siguiente:
+        - Solicite al usuario un número
+        - Comprueba que sea par y mayor que 0
+        - Y si es así, muestre por pantalla una línea con el carácter “*” (asterisco) tantas veces
+        como el valor del número.
+        Por ejemplo, si introduce 8 mostrará ********
+
+
+     -->
+
+
+    <script>
+        let num = prompt("Ingrese un numero");
+
+        if (num%2 == 0 && num > 0){
+            for (num; num > 0; num--){
+                console.log("*")
+            }
+        }
+       
+    </script>
+
+
+</body>
+
+</html>
