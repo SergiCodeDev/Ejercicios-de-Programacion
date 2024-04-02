@@ -17,6 +17,7 @@
                 <td></td>
             </tr>
         </table>
+        <button onclick="imprimir()">Imprimir</button>
     </div>
     <script>
         // Pide introducir el número sobre el que generar la tabla
@@ -31,6 +32,13 @@
         // Muestra el resultado por pantalla
         document.getElementById('tabla1').innerHTML = resultado;
     </script>
+    <script>
+        function imprimir() {
+        window.print();
+        }
+        </script>
+        
+        
 </body>
 
 </html>
