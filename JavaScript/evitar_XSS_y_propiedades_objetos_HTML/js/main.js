@@ -110,3 +110,30 @@ selecionarB.addEventListener("click", () => {
         parrafo.style.display = "none";
       }
 });
+
+let secion2 = document.createElement("div");
+
+let sParrafo = document.createElement("p");
+sParrafo.textContent = "Pruebas 2";
+sParrafo.classList.add("marcado");
+
+
+let boton2 = Object.assign(document.createElement("button"), {
+  style: "color: green; background: black;",
+  textContent: "ocultar pruebas2 con clase",
+});
+boton2.setAttribute("data-filter",`ocultar2`);
+
+
+secion2.appendChild(sParrafo);
+secion2.appendChild(boton2);
+
+cuerpo.appendChild(secion2);
+
+
+let selecionarB2 = document.querySelector('[data-filter~="ocultar2"]');
+
+selecionarB2.addEventListener("click", () => {
+    let parrafo = document.querySelector('.marcado');
+    parrafo.classList.toggle("display-none");
+});
