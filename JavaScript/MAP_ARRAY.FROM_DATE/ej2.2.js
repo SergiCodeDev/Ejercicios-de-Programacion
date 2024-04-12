@@ -134,7 +134,7 @@ function calcularAreaTriangulo(lado1, lado2, anguloEnGrados) {
     return area;
 }
 
-var area = calcularAreaTriangulo(7, 8, 30);
+let area = calcularAreaTriangulo(7, 8, 30);
 print(area);
 
 /**
