@@ -1,0 +1,22 @@
+.articulos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.articulos article {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 0.5rem;
+}
+
+.articulos img {
+    width: 100%;
+    height: auto;
+}
+
+.articulos .titulo,
+.articulos .precio,
+.articulos .descripcion {
+    margin: 0;
+}
