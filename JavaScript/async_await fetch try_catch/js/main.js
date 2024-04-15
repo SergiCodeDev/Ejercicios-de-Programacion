@@ -3,7 +3,7 @@ function isValidUrl(string) {
     try {
         new URL(string);
     } catch (_) {
-        return false;  
+        return false;
     }
     return true;
 }
@@ -30,11 +30,16 @@ function meterArticulos(datos) {
             descripcion.textContent = `${objeto.description}`
             descripcion.classList.add("descripcion")
 
+            /*             
             article.appendChild(img)
             article.appendChild(titulo)
             article.appendChild(precio)
-            article.appendChild(descripcion)
+            article.appendChild(descripcion) 
+            */
 
+            // manera mas clara
+            
+            article.append(img, titulo, precio, descripcion)
 
             SECION.appendChild(article)
 
@@ -42,7 +47,7 @@ function meterArticulos(datos) {
     } else {
         const SECION = document.querySelector(".articulos")
 
-        let h2 =document.createElement("h2")
+        let h2 = document.createElement("h2")
         h2.textContent = "No se pudo acceder a la API"
 
         SECION.appendChild(h2)
